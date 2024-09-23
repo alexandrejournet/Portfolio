@@ -1,0 +1,124 @@
+.homepage-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100% - 120px);
+    width: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  div {
+
+    &:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 45%;
+
+      .img-container {
+        width: 510px !important;
+        height: 510px !important;
+        //border: 5px dotted var(--foreground);
+        //border-radius: 50%;
+
+        img {
+          width: 500px !important;
+          height: 500px !important;
+          filter: grayscale(1);
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+        }
+
+        &:hover {
+          transform: scale(0.8);
+
+          img {
+            filter: grayscale(0);
+          }
+          .border-overlay {
+              border: 10px dotted var(--highlight);
+          }
+        }
+      }
+    }
+
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+
+    div {
+      width: 100%;
+
+      justify-content: center !important;
+      align-items: center !important;
+
+      &:first-child {
+        width: 100%;
+
+        .img-container {
+          width: 310px !important;
+          height: 310px !important;
+          img {
+            width: 300px !important;
+            height: 300px !important;
+          }
+        }
+
+      }
+    }
+  }
+
+  .name, .title, .work {
+    text-align: center !important;
+  }
+
+}
+
+.name {
+  font-size: 64px;
+  text-align: end;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--highlight);
+  font-weight: bold;
+  text-align: end;
+}
+
+.work {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: end;
+}
+
+.border-overlay {
+  position: absolute;
+  width: 510px !important;
+  height: 510px !important;
+  border: 5px dotted var(--foreground); /* Dotted border */
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none; /* Disable interaction with the border */
+  z-index: 2; /* Ensure the border is above the image */
+}

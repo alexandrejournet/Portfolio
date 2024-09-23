@@ -1,0 +1,22 @@
+.timeline-container {
+    position: relative;
+    padding: 20px;
+    margin-top:20px;
+}
+
+.timeline {
+    border-left: 2px solid var(--highlight);
+    margin: 20px 0;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: -20px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid var(--highlight);
+}

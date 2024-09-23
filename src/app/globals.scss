@@ -1,0 +1,84 @@
+$highlight: #FF4C60;
+
+:root {
+  --highlight: #FF4C60;
+  --highlight-hover: rgba($highlight, 0.5);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #2C2C2C;
+    --card-background: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2C2C2C;
+    --foreground: #ededed;
+    --card-background: #323232;
+  }
+}
+
+.light {
+  --background: #ffffff;
+  --foreground: #2C2C2C;
+  --card-background: #ffffff;
+}
+
+
+.dark {
+  --background: #2C2C2C;
+  --foreground: #ededed;
+  --card-background: #323232;
+}
+
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Quicksand, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 100ms all;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+section {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
