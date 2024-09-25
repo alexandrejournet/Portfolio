@@ -1,3 +1,100 @@
-.imh-holder {
+
+.project-holder {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+  gap: 50px;
+
+  .img-holder {
+    width: 40%;
+    aspect-ratio: 16 / 9;
+    background: var(--card-background);
+    border-radius: 10px;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      text-align: right;
+    }
+
+    .project-title {
+      font-size: 32px;
+    }
+
+    .project-link {
+      color: var(--foreground);
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &.right {
+        right: 0;
+      }
+
+      &.left {
+        left: 0;
+      }
+
+      a:hover {
+        color: var(--highlight);
+      }
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      &.left {
+        justify-content: flex-start;
+      }
+
+      &.right {
+        justify-content: flex-end;
+      }
+
+      .tag {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: var(--card-background);
+        color: var(--foreground);
+        font-size: smaller;
+
+        &:hover {
+            background: var(--highlight);
+            color: var(--foreground);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .project-description {
+      margin-bottom: 40px;
+    }
+  }
+
+  .line {
+    margin-top :0;
+    width: 30%;
+
+    &.left {
+      align-self: start;
+    }
+    &.right {
+      align-self: end;
+    }
+  }
 
 }
+
+

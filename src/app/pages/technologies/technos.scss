@@ -17,6 +17,7 @@
         transition: transform 0.6s;
         transform-style: preserve-3d;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
 
         &:hover {
             box-shadow: 0 0 20px rgba(255, 76, 97, 0.8);
@@ -28,8 +29,6 @@
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-        }
-        .techno {
             display: flex;
             flex-direction: column;
             align-items: center;
