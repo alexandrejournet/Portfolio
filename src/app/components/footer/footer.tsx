@@ -3,12 +3,15 @@ const Footer = () => {
     return (
         <footer>
 
-        <p>Designed and Developed by Alexandre Journet.
+        <p>Conçu et développé par Alexandre Journet.
             <br/>
-            Built with <span className={'highlight'}>Next.js</span>. Hosted on a <span className={'highlight'}>RaspberryPI</span>.
+            Construit avec <span className={'highlight'}>Next.js</span>. Hébergé sur un <span className={'highlight'}>RaspberryPI</span>.
         </p>
         </footer>
 );
 }
 
 export default Footer;
+
+//Designed and Developed by Alexandre Journet.
+//Built with <span className={'highlight'}>Next.js</span>. Hosted on a <span className={'highlight'}>RaspberryPI</span>.

@@ -5,12 +5,22 @@
   padding: 20px;
   justify-content: center;
   gap: 50px;
+  margin-top: 30px;
 
   .img-holder {
     width: 40%;
     aspect-ratio: 16 / 9;
     background: var(--card-background);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-content: center;
+
+    img {
+        height: 90% !important;
+        object-fit: contain;
+        border-radius: 10px;
+    }
   }
 
   .project-text {
@@ -69,10 +79,11 @@
         background: var(--card-background);
         color: var(--foreground);
         font-size: smaller;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
         &:hover {
-            background: var(--highlight);
-            color: var(--foreground);
+          background: var(--highlight);
+          color: white;
           cursor: pointer;
         }
       }
