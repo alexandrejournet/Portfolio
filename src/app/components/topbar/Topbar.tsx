@@ -32,7 +32,7 @@ const Topbar = () => {
 
         setMounted(true);
         const handleClickOutside = (event: Event) => {
-            if (drawerRef.current && !drawerRef.current.contains(event.target)) {
+            if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
                 closeDrawer();
             }
         };

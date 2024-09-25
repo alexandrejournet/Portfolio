@@ -4,6 +4,7 @@ const Projects = () => {
 return (
     <section id={"projects"}>
         <TitleHeader title={"Projets"} />
+        <p>Work in progress...</p>
     </section>
     );
 }

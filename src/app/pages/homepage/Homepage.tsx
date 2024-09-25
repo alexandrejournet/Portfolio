@@ -30,6 +30,7 @@ const Homepage = () => {
                         alt="Profile picture"
                         width={300}
                         height={300}
+                        unoptimized
                     />
                     <div
                         className="border-overlay"

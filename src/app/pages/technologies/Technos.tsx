@@ -96,7 +96,7 @@ const TechnoBlock = (techno: ITechno) => {
                         techno.logos.map((logo, index) => (
                             <Image key={index} src={`/assets/images/technos/${logo}`} alt={techno.name}
                                    width={75}
-                                   height={75}/>
+                                   height={75} unoptimized/>
                         ))
                     }
                 </div>
@@ -106,7 +106,7 @@ const TechnoBlock = (techno: ITechno) => {
             return (
                 <Image src={`/assets/images/technos/${techno.logo}`} alt={techno.name}
                        width={75}
-                       height={75}/>
+                       height={75} unoptimized />
             );
         }
     }
