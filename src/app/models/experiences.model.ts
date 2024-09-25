@@ -1,12 +1,13 @@
 export class ExperiencesModel {
-    title: string;
+    company: string;
     location: string = '';
     description: string;
-    date: string;
+    startDate: string;
+    endDate?: string;
     missions: string[] = [];
-    constructor(title: string, description: string, date: string) {
-        this.title = title;
+    constructor(company: string, description: string, startDate: string) {
+        this.company = company;
         this.description = description;
-        this.date = date;
+        this.startDate = startDate;
     }
 }

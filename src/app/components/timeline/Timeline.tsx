@@ -1,22 +1,26 @@
 import React from 'react';
 import TimelineItem from "@/app/components/timeline/timeline-item/TimelineItem";
 import './timeline.scss';
+import {ExperiencesModel} from "@/app/models/experiences.model";
 
 const Timeline = () => {
-    const experiences = [
+    const experiences: ExperiencesModel[] = [
         {
             company: 'AXOPEN',
             location: 'Lyon',
             startDate: 'Septembre 2019',
-            endDate: null,
-            description: 'Missions',
+            description: 'Développement d\'applications web en Angular, C# + .NET, JAVA + Spring Boot, ',
+            missions: [
+            ]
         },
         {
             company: 'INETUM (ex GFI)',
             location: 'Montpellier',
             startDate: 'Septembre 2017',
             endDate: 'Août 2019',
-            description: '',
+            description: 'Développement d\'une application en J2EE',
+            missions: [
+            ]
         },
     ];
 

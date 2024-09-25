@@ -1,7 +1,7 @@
 import React from 'react';
 import './timeline-item.scss';
 
-const TimelineItem = (props: { company: string, location:string , startDate: string, endDate: string | null, description: string }) => {
+const TimelineItem = (props: { company: string, location:string , startDate: string, endDate: string | undefined, description: string }) => {
     return (
         <div className={"timeline-item"}>
             <div className={"circle"}></div>

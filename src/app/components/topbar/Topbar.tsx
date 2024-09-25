@@ -66,8 +66,8 @@ const Topbar = () => {
 
                 {/* Buttons for GitHub, LinkedIn, and Theme Change */}
                 <div className="topbar-buttons">
-                    <ImGithub />
-                    <LuLinkedin />
+                    <ImGithub href={"https://github.com/alexandrejournet"}/>
+                    <LuLinkedin href={"https://www.linkedin.com/in/alexandrejournet/"}/>
                     <ThemeChanger />
                 </div>
 
