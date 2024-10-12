@@ -60,11 +60,11 @@ const SliderContent = (props: { images: string[], current: number }) => {
                 props.images.map((img, index) => (
                     <div key={index}
                          className={props.current === index ? "slide active" : "slide inactive"}>
-                        <img src={`/assets/images/${img}`} alt={"project"} onClick={() => setIsModalOpen(true)} />
+                        <img src={`/portfolio/assets/images/${img}`} alt={"project"} onClick={() => setIsModalOpen(true)} />
                         {
                             isModalOpen &&
                             <Modal onClose={() => setIsModalOpen(false)}>
-                                <Image src={`/assets/images/${img}`} width={160} height={90} alt={"project"} />
+                                <Image src={`/portfolio/assets/images/${img}`} width={160} height={90} alt={"project"} />
                             </Modal>
                         }
                     </div>
