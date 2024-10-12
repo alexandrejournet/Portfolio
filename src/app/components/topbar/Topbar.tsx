@@ -60,6 +60,7 @@ const Topbar = () => {
                 <ul className="menu">
                     <li><Link href={"#about-me"}>A propos de moi</Link></li>
                     <li><Link href={"#technos"}>Technologies</Link></li>
+                    <li><Link href={"#certifications"}>Certifications</Link></li>
                     <li><Link href={"#experiences"}>Expériences</Link></li>
                     <li><Link href={"#projects"}>Projets</Link></li>
                 </ul>
@@ -76,11 +77,12 @@ const Topbar = () => {
                     <ul className="drawer-menu">
                         <li><Link href={"#about-me"} onClick={closeDrawer}>A propos de moi</Link></li>
                         <li><Link href={"#technos"} onClick={closeDrawer}>Technologies</Link></li>
+                        <li><Link href={"#certifications"} onClick={closeDrawer}>Certifications</Link></li>
                         <li><Link href={"#experiences"} onClick={closeDrawer}>Expériences</Link></li>
                         <li><Link href={"#projects"} onClick={closeDrawer}>Projets</Link></li>
                     </ul>
                     <div className="drawer-buttons">
-                        <ImGithub />
+                    <ImGithub />
                         <LuLinkedin />
                         {resolvedTheme === 'dark' ?
                         <LuSun onClick={toggleTheme}/>

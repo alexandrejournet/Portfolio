@@ -7,6 +7,7 @@ import Experiences from "@/app/pages/experiences/Experiences";
 import Projects from "@/app/pages/projects/Projects";
 import Footer from "@/app/components/footer/footer";
 import ContactMe from "@/app/pages/contact-me/ContactMe";
+import {Certifications} from "@/app/pages/certifications/Certifications";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Homepage />
         <AboutMe />
         <Technos />
+        <Certifications />
         <Experiences />
         <Projects />
         <ContactMe />
