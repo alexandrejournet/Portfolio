@@ -23,7 +23,7 @@ const ProjectLeft = (props: {project: Project}) => {
                 props.project.imgs?.length > 0 ?
                     <ProjectSlider images={props.project.imgs} />
                     :
-                    <Image width={100} height={100} src={`/portfolio/assets/images/ampoule.png`} alt={"project"}/>
+                    <Image width={100} height={100} src={`/assets//images/ampoule.png`} alt={"project"}/>
             }
         </div>
         <div className={"project-text left"}>
@@ -69,7 +69,7 @@ const ProjectRight = (props: {project: Project}) => {
                 props.project.imgs?.length > 0 ?
                     <ProjectSlider images={props.project.imgs} />
                 :
-                    <Image width={100} height={100}  src={`/portfolio/assets/images/ampoule.png`} alt={"project"}/>
+                    <Image width={100} height={100}  src={`/assets//images/ampoule.png`} alt={"project"}/>
             }
         </div>
     </div>

@@ -26,7 +26,7 @@ const Homepage = () => {
             <div>
                 <div className={"img-container"}>
                     <Image
-                        src="/portfolio/assets/images/homepage.png"
+                        src="/assets//images/homepage.png"
                         alt="Profile picture"
                         width={300}
                         height={300}
