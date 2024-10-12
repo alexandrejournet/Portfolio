@@ -127,3 +127,22 @@ section {
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--card-background);
+  color: var(--foreground);
+  font-size: smaller;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: var(--highlight);
+    color: white;
+    cursor: pointer;
+  }
+}
