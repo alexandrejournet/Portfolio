@@ -5,7 +5,7 @@ const Footer = () => {
 
         <p>Conçu et développé par Alexandre Journet.
             <br/>
-            Construit avec <span className={'highlight'}>Next.js</span>. Hébergé sur un <span className={'highlight'}>RaspberryPI</span>.
+            Construit avec <span className={'highlight'}>Next.js</span>. Hébergé sur <span className={'highlight'}>Github Pages</span>.
         </p>
         </footer>
 );
