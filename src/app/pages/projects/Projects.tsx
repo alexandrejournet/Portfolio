@@ -13,11 +13,14 @@ const Projects = () => {
             links: ["https://www.alexandrejournet.dev"]
         },
         {
-            title: "Reboot.NET",
+            title: "Solstice",
             tags: [".NET", "C#", "Clean Architecture", "Repository pattern"],
             description: "Création d'un framework par dessus .NET pour faciliter la création d'API REST. Utilisation de Clean Architecture et du Repository pattern. Séparé en plusieurs packages Nuget, un pour chaque couche.",
             imgs: [],
-            links: ["https://rebootframework.alexandrejournet.dev", "https://www.nuget.org/packages/Reboot.API"]
+            links: [
+                "https://rebootframework.alexandrejournet.dev",
+                "https://github.com/alexandrejournet/Solstice"
+            ]
         },
         {
             title: "PrestiGit",
