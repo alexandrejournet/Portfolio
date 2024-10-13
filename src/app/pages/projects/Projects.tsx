@@ -18,7 +18,7 @@ const Projects = () => {
             description: "Création d'un framework par dessus .NET pour faciliter la création d'API REST. Utilisation de Clean Architecture et du Repository pattern. Séparé en plusieurs packages Nuget, un pour chaque couche.",
             imgs: [],
             links: [
-                "https://rebootframework.alexandrejournet.dev",
+                "https://alexandrejournet.github.io/Solstice/",
                 "https://github.com/alexandrejournet/Solstice"
             ]
         },
