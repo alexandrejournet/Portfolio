@@ -12,7 +12,6 @@ const TimelineItem = (props: { experience: Experiences}) => {
                     {props.experience.company} @{props.experience.location}</h3>
                 <span>{props.experience.startDate} - {props.experience.endDate || "aujourd'hui"}</span>
                 <div>{props.experience.description}</div>
-                <div className={"line"}></div>
                 <div className={"missions"}>
                     {props.experience.missions?.map((mission, index) => (
                         <>
